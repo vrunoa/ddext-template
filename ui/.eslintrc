@@ -1,0 +1,18 @@
+{
+    "ignorePatterns": ["./build/**/*.js" , "**/vite.config.ts"],
+    "extends": ["plugin:@typescript-eslint/recommended","eslint:recommended", "plugin:react/recommended", "plugin:react/jsx-runtime"],
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "rules":  {
+        "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }]
+    },
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}
